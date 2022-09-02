@@ -44,10 +44,17 @@ def process_image(image: List[int], width, height):
     return
 
 def filter_inner_types(image: List[int], candidates: List[int]):
-    for candidate in candidates:
-        i=1
+    eyes=[]
+    #for candidate in candidates:
+        #TODO: Match all inner patterns
+        #TODO: For each pattern matched - create eye to correct later
+        
 
 
+    return eyes
+
+def correct_eyes(image: List[int], eyes: List[int]):
+    #TODO: correct each eye
     return
 
 def find_rectangle_candidates(image: List[int], width, height):
