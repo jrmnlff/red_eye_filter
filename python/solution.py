@@ -28,17 +28,10 @@ def compute_solution(images: List[Union[PackedImage, StrideImage]], out_images: 
     ft = FunctionTracer("compute_solution", "seconds")
 
     #TODO fill solution
-    a=1
     for i in images:
         image = i.pixels_red
-        #plt.imsave('out\eye'+str(a)+'.png', np.array(result).reshape(i.resolution.width,i.resolution.height), cmap=cm.gray)
-        plt.imshow(np.array(image).reshape(i.resolution.width,i.resolution.height))
-        plt.show()
-        plt.imshow(np.array(out_images[a-1].pixels_red).reshape(i.resolution.width,i.resolution.height))
-        a+=1
-        result = process_image(image, i.resolution.width,i.resolution.height)
-        plt.imshow(np.array(result).reshape(i.resolution.width,i.resolution.height))
-
+        process_image(image, i.resolution.width,i.resolution.height)
+        
     del ft
 
 def process_image(image: List[int], width, height):
@@ -52,7 +45,7 @@ def process_image(image: List[int], width, height):
 
 def filter_inner_types(image: List[int], candidates: List[int]):
     for candidate in candidates:
-        
+        i=1
 
 
     return
