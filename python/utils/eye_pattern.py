@@ -11,10 +11,10 @@ InnerEyeLine = Tuple[int, int, int]
 InnerEye = Tuple[InnerEyeLine,InnerEyeLine,InnerEyeLine]
 
 class InnerEyeType(Enum):
-    TypeHorizontal = 0
-    TypeVertical = 1
-    TypePlus = 2
-    TypeDiagonal = 3
+    Horizontal = 0
+    Vertical = 1
+    Plus = 2
+    Diagonal = 3
 
 EYE_PATTERN_BASE: EyePattern = [
                 [1,1,1,1,1],
